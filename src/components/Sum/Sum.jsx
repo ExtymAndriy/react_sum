@@ -1,11 +1,11 @@
 import React from 'react';
 
-export const Sum = ({ titleOne = 0, titleTwo = 0 }) => {
-  const result = titleOne + titleTwo;
+export const Sum = ({ a = 0, b = 0 }) => {
+  const result = a + b;
 
   return (
     <p className="Sum">
-      Sum of {titleOne} and {titleTwo} is {result}
+      Sum of {a} and {b} is {result}
     </p>
   );
 };
