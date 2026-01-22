@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.scss';
+import { Sum } from './components/Sum/Sum';
 
 export const App = () => (
-  <>
-    <p>Sum of 2 and 3 is 5</p>
-    <p>Sum of -5 and 5 is 0</p>
-    <p>Sum of 10 and 0 is 10</p>
-    <p>Sum of 0 and 5 is 5</p>
-    <p>Sum of 0 and 0 is 0</p>
-    {/* Replace paragraphs with Sum componets */}
-    {/* And remove commented lines :) */}
-  </>
+  <div className="app">
+    <Sum titleOne={2} titleTwo={3} />
+    <Sum titleOne={-5} titleTwo={5} />
+    <Sum titleOne={10} titleTwo={0} />
+    <Sum titleOne={0} titleTwo={5} />
+    <Sum />
+  </div>
 );
